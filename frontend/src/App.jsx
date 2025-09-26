@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from "react";
 import UploadForm from "./components/UploadForm";
 import { Toaster } from "react-hot-toast";
@@ -26,7 +27,7 @@ function App() {
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
 
       {/* Main Content */}
-      <div className="relative z-10 w-full max-w-4xl">
+      <div className="relative z-10 w-full max-w-5xl px-4 sm:px-6 md:px-8">
         <UploadForm />
       </div>
 
