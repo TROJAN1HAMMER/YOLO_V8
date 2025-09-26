@@ -14,7 +14,10 @@ app = FastAPI()
 # Allow frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://main.d2y1sw8v1mkbt1.amplifyapp.com",  # your frontend
+        "https://13-218-84-170.sslip.io"              # backend direct access
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
