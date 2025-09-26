@@ -127,7 +127,7 @@ function UploadForm() {
       formData.append("file", image);
 
       // send to backend
-      const response = await axios.post("http://127.0.0.1:8000/predict/", formData);
+      const response = await axios.post("http://13.218.84.170:8000/predict/", formData);
       const { detections } = response.data;
 
       // create watermarked data url from original file (so local watermark is applied)
