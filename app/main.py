@@ -74,8 +74,9 @@ async def predict(file: UploadFile = File(...)):
         save_dir = Path(results[0].save_dir)
         # YOLO saves with original filename
         result_file = save_dir / file_path.name
-        image_url = f"http://127.0.0.1:8000/results/{save_dir.name}/{file_path.name}"
+        PUBLIC_HOST = "http://13.218.84.170:8000"
 
+        image_url = f"{PUBLIC_HOST}/results/{save_dir.name}/{file_path.name}"
         response = {
             "filename": file.filename,
             "detections": detections,

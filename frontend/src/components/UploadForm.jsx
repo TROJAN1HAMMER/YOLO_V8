@@ -145,7 +145,7 @@ function UploadForm() {
   };
 
   return (
-    <div className="h-130 bg-gradient-to-br from-purple-950 via-purple-900 to-black flex items-center justify-center px-6 py-12 relative overflow-hidden rounded-2xl">
+    <div className="h-150 bg-gradient-to-br from-purple-950 via-purple-900 to-black flex items-center justify-center px-6 py-12 relative overflow-hidden rounded-2xl">
       {/* subtle animated background blobs */}
       <motion.div
         className="absolute top-8 left-8 w-[22rem] h-[22rem] bg-purple-700 rounded-full mix-blend-multiply filter blur-3xl opacity-25"
